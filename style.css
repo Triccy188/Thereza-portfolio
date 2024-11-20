@@ -1,0 +1,136 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  background: #caebf2;
+  color: #001f3f;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto Mono", monospace;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+.quote {
+  font-style: italic;
+}
+.container {
+  max-width: 74vw;
+  margin: 0 auto;
+}
+.intro {
+  text-align: center;
+}
+.profile-picture {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  /* position: relative; */
+}
+.profile-picture:hover {
+  filter: brightness(0.75);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.i-am,
+.i-like {
+  text-align: center;
+  text-decoration: none;
+}
+.about-list {
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 620px) {
+  .about-grid {
+    grid-template-columns: 100%;
+  }
+}
+.project-heading {
+  text-align: center;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 30px 0;
+}
+@media (max-width: 650px) {
+  .project-grid {
+    grid-template-columns: 100%;
+  }
+}
+.project-image {
+  justify-content: center;
+  padding: 4%;
+  border-radius: 5px;
+  box-shadow: 0 3px 3px 0 rgba(34, 60, 80, 0.16);
+  transition: all ease-in-out 0.2s;
+}
+.project-image:hover {
+  filter: brightness(0.75);
+}
+.project-image-wrapper {
+  position: relative;
+  width: 300px;
+  display: flex;
+  justify-self: center;
+}
+.project-image-desc {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50% -50%);
+  color: white;
+  visibility: hidden;
+  z-index: 10;
+  transition: visibility 0.2s ease-in-out;
+}
+.project-image-wrapper:hover .project-image-desc {
+  visibility: visible;
+}
+.links-and-contact {
+  display: flex;
+}
+.link {
+  justify-self: left;
+}
+.link-lists {
+  list-style: none;
+  padding: 0;
+}
+.link-anchor {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(3, 184, 213);
+}
+form input,
+textarea {
+  padding: 5px;
+  border-radius: 5px;
+  width: 250px;
+}
+form {
+  width: 250px;
+  margin: auto;
+}
+form input[type="submit"] {
+  width: 260px;
+  border-radius: 5px;
+  background-color: rgb(96, 208, 225);
+}
+.submit-button-wrapper {
+  margin: 20px 0;
+}

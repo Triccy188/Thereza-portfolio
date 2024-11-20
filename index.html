@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>first web page</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="intro">
+        <div>
+          <img
+            src="images/profile-picture.jpg"
+            alt="founder picture"
+            class="profile-picture"
+          />
+          <h1>Thereza Stephen</h1>
+          <h3>Web Developer at Careerfoundry</h3>
+          <p class="quote">{{pause and ponder}}</p>
+        </div>
+      </div>
+      <div class="about-grid">
+        <div class="i-am">
+          <h3>I am</h3>
+          <ul class="about-list">
+            <li>An Engineer</li>
+            <li>A reader</li>
+            <li>A hobby cook</li>
+          </ul>
+        </div>
+        <div class="i-like">
+          <h3>I like to</h3>
+          <ul class="about-list">
+            <li>Meet new people</li>
+            <li>play guitar</li>
+            <li>Eat Icecream</li>
+          </ul>
+        </div>
+      </div>
+        <h3 class="project-heading">My Projects</h3>
+       <div class="project-grid">
+          <div class="project-image-wrapper">
+            <h4 class="project-image-desc">project 1</h4>
+          <img class="project-image" src="images/project-1.jpg" alt="" />
+          </div>
+          <div class="project-image-wrapper">
+            <h4 class="project-image-desc">project 2</h4>
+            <img class="project-image" src="images/project-2.jpg" alt="" />
+          </div>
+          <div class="project-image-wrapper">
+            <h4 class="project-image-desc">project 3</h4>
+          <img class="project-image" src="images/project-3.jpg" alt="" /> 
+          </div>
+          <div class="project-image-wrapper">
+            <h4 class="project-image-desc">project 4</h4>
+            <img class="project-image" src="images/project-4.jpg" alt="" />
+          </div>
+        </div>
+        <div class="links-and-contact">
+          <div class="link">
+          <h3>Links</h3>
+          <ul class="link-lists">
+            <li><a class="link-anchor" href="https://github.com/<user>">github</a></li>
+            <li><a class="link-anchor" href="https://twitter.com/<user>">Twitter</a></li>
+            <li><a class="link-anchor" href="https://linkedin.com/<user>">linkedin</a></li>    
+        </div>
+        </div>
+        <div>
+            <form action="#">
+                <label for="Email">
+                <h4 style="margin: 10px 0;">Email</h4>
+                <input type="email"  id="email" placeholder="Enter your email"/>
+                </label>
+                <label for="message">
+                <h4 style="margin: 10px 0;">Message</h4>
+                <textarea id="message" placeholder="Your message"></textarea>
+                </label>
+                <div class="submit-button-wrapper">
+                <input type="Submit" value="Send message" d="submitbutton">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
